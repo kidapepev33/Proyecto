@@ -10,7 +10,6 @@
   - ~~Inicializar repositorio Git, crear commit inicial y dejar rama `main`~~
   - ~~Conectar remoto `origin` en GitHub y hacer push de `main`~~
 - Pendiente:
-  - Importar proyecto en Vercel y configurar variables de entorno
   - Modernización visual avanzada (siguiente prompt)
 
 ## Objetivo General
@@ -40,9 +39,9 @@ Crear una versión modernizada de `https://www.fertinyc.com/` con estructura lim
 - [x] ~~Hacer `git push -u origin main`.~~
 
 ### 1.3 Vercel
-- [ ] Importar repo en `vercel.com`.
-- [ ] Configurar variables de entorno de Supabase.
-- [ ] Validar primer deploy exitoso.
+- [x] ~~Importar repo en `vercel.com`.~~
+- [x] ~~Configurar variables de entorno de Supabase.~~
+- [x] ~~Validar primer deploy exitoso.~~
 
 ## Fase 2: Recreate + Modernización
 
@@ -58,7 +57,7 @@ Crear una versión modernizada de `https://www.fertinyc.com/` con estructura lim
 ## Fase 3: Validación y Entrega
 - [ ] Verificación final en desktop/mobile con `npm run dev`.
 - [ ] Verificación del formulario contra Supabase real.
-- [ ] Deploy final en Vercel.
+- [x] ~~Deploy final en Vercel.~~
 
 ## Comandos Git listos para continuar
 ```bash
