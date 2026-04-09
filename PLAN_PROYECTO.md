@@ -10,7 +10,7 @@
   - ~~Inicializar repositorio Git, crear commit inicial y dejar rama `main`~~
   - ~~Conectar remoto `origin` en GitHub y hacer push de `main`~~
 - Pendiente:
-  - Crear proyecto real en Supabase y cargar `supabase/schema.sql`
+  - Ejecutar `supabase/schema.sql` en Supabase
   - Importar proyecto en Vercel y configurar variables de entorno
   - Modernización visual avanzada (siguiente prompt)
 
@@ -24,12 +24,14 @@ Crear una versión modernizada de `https://www.fertinyc.com/` con estructura lim
 ## Fase 1: Preparación y Base del Proyecto
 
 ### 1.1 Supabase
-- [ ] Crear proyecto nuevo en `supabase.com`.
-- [ ] Copiar credenciales:
+- [x] ~~Crear proyecto nuevo en `supabase.com`.~~
+- [x] ~~Copiar credenciales:~~
   - `NEXT_PUBLIC_SUPABASE_URL`
   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
   - `SUPABASE_SERVICE_ROLE_KEY`
 - [ ] Ejecutar `supabase/schema.sql` en SQL Editor.
+- [x] ~~Guardar credenciales localmente en `.env.local` (no versionado).~~
+- [ ] Guardar contraseña de DB en gestor seguro (no en archivos versionados).
 
 ### 1.2 GitHub
 - [x] ~~Inicializar proyecto con estructura Next.js~~
