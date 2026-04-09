@@ -1,27 +1,6 @@
-﻿.fert-logo-wrap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-}
-
-.fert-logo-icon {
-  width: 34px;
-  height: 48px;
-  background: linear-gradient(180deg, #ffffff 0%, #e9e9e9 100%);
-  clip-path: polygon(48% 0%, 73% 22%, 63% 44%, 84% 66%, 48% 100%, 14% 66%, 34% 44%, 24% 22%);
-}
-
-.fert-logo-copy span {
-  display: block;
-  font-size: 0.85rem;
-  opacity: 0.95;
-}
-
-.fert-logo-copy strong {
-  font-size: 1.85rem;
-  letter-spacing: 1px;
-  line-height: 0.95;
+﻿.fert-logo-link img {
+  width: 170px;
+  height: auto;
 }
 
 .fert-nav-list {
@@ -30,13 +9,13 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 26px;
 }
 
 .fert-nav-list a {
   color: #fff;
-  font-size: 0.98rem;
-  letter-spacing: 0.7px;
+  font-size: 0.95rem;
+  letter-spacing: 0.6px;
   font-weight: 600;
 }
 
@@ -50,7 +29,7 @@
   display: block;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: clamp(3rem, 8vw, 6.3rem);
+  font-size: clamp(3rem, 8vw, 6.2rem);
 }
 
 .line-white {
@@ -62,7 +41,7 @@
 }
 
 .fert-hero-actions {
-  margin-top: 42px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   gap: 28px;
@@ -96,11 +75,6 @@
   margin-left: 4px;
 }
 
-.fert-about {
-  background: #fff;
-  text-align: center;
-}
-
 .fert-section-title {
   margin: 0 0 18px;
   color: var(--fert-yellow);
@@ -112,9 +86,13 @@
 .fert-section-copy {
   max-width: 1020px;
   margin: 0 auto;
-  font-size: 1.07rem;
+  font-size: 1.05rem;
   line-height: 1.75;
   color: #444;
+}
+
+.fert-section-copy.left {
+  text-align: left;
 }
 
 .fert-pillars {
@@ -141,11 +119,6 @@
   line-height: 1.25;
 }
 
-.fert-tour {
-  text-align: center;
-  background: #f3f3f3;
-}
-
 .fert-tour-title {
   margin: 0 0 14px;
   font-size: 1.6rem;
@@ -165,6 +138,48 @@
   color: #1f1f1f;
   text-decoration: underline;
   font-weight: 700;
+}
+
+.product-card,
+.blog-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  text-align: left;
+}
+
+.product-card img,
+.blog-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.product-card h3,
+.blog-card h3 {
+  margin: 14px 14px 8px;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  margin: 0 14px 12px;
+  color: #4f4f4f;
+  line-height: 1.55;
+}
+
+.product-card a,
+.blog-card a {
+  display: inline-block;
+  margin: 0 14px 16px;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.fert-footer-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .fert-contact-grid {

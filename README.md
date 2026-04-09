@@ -1,14 +1,21 @@
-# FertiNYC Rebuild (Next.js)
+# FertiNYC Replica (Next.js)
 
-Recreacion de la home de referencia (`https://www.fertinyc.com/en/home/`) con estructura Next.js y clases propias.
+Replica visual multi-pagina del sitio `https://www.fertinyc.com/en/home/` con rutas equivalentes y clases propias.
 
 ## Stack
 - Next.js
 - React
 
 ## Estructura principal
-- `pages/index.js`: estructura principal de la home.
-- `data/siteContent.js`: contenido navegacion y bloques.
+- `pages/en/home.js`: home en ingles.
+- `pages/en/about-us-2.js`
+- `pages/en/products-2.js`
+- `pages/blog-grid.js`
+- `pages/en-gallery.js`
+- `pages/en/contact.js`
+- `pages/index.js`: entrada raiz apuntando al home.
+- `components/site/*`: header, footer, hero interno y home componentizada.
+- `data/siteContent.js`: navegacion, assets y bloques de contenido.
 - `styles/_extend.css`: punto unico para enlazar CSS.
 - `styles/css/*`: estilos por bloques (`base`, `layout`, `components`, `responsive`).
 - `PLAN_PROYECTO.md`: plan y estado del proyecto.
