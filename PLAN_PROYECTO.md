@@ -8,9 +8,9 @@
   - ~~Ordenar CSS con `styles/_extend.css` + parciales en `styles/css/*`~~
   - ~~Limpiar carpetas/archivos legacy (`includes`, `pages/auth`, `pages/index.html`)~~
   - ~~Inicializar repositorio Git, crear commit inicial y dejar rama `main`~~
+  - ~~Conectar remoto `origin` en GitHub y hacer push de `main`~~
 - Pendiente:
   - Crear proyecto real en Supabase y cargar `supabase/schema.sql`
-  - Conectar repositorio local a remoto de GitHub (`origin`) y hacer push
   - Importar proyecto en Vercel y configurar variables de entorno
   - Modernización visual avanzada (siguiente prompt)
 
@@ -35,8 +35,8 @@ Crear una versión modernizada de `https://www.fertinyc.com/` con estructura lim
 - [x] ~~Inicializar proyecto con estructura Next.js~~
 - [x] ~~Ordenar carpetas para escalabilidad (`components`, `styles`, `lib`, `pages`, `data`, `docs`)~~
 - [x] ~~Inicializar Git y crear primer commit~~
-- [ ] Vincular remoto `origin` del repo de GitHub.
-- [ ] Hacer `git push -u origin main`.
+- [x] ~~Vincular remoto `origin` del repo de GitHub.~~
+- [x] ~~Hacer `git push -u origin main`.~~
 
 ### 1.3 Vercel
 - [ ] Importar repo en `vercel.com`.
