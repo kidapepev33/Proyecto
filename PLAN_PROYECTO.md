@@ -10,7 +10,6 @@
   - ~~Inicializar repositorio Git, crear commit inicial y dejar rama `main`~~
   - ~~Conectar remoto `origin` en GitHub y hacer push de `main`~~
 - Pendiente:
-  - Ejecutar `supabase/schema.sql` en Supabase
   - Importar proyecto en Vercel y configurar variables de entorno
   - Modernización visual avanzada (siguiente prompt)
 
@@ -29,7 +28,7 @@ Crear una versión modernizada de `https://www.fertinyc.com/` con estructura lim
   - `NEXT_PUBLIC_SUPABASE_URL`
   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
   - `SUPABASE_SERVICE_ROLE_KEY`
-- [ ] Ejecutar `supabase/schema.sql` en SQL Editor.
+- [x] ~~Ejecutar `supabase/schema.sql` en SQL Editor.~~
 - [x] ~~Guardar credenciales localmente en `.env.local` (no versionado).~~
 - [ ] Guardar contraseña de DB en gestor seguro (no en archivos versionados).
 
