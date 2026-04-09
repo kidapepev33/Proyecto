@@ -1,16 +1,16 @@
 :root {
-  --bg-main: #f7f8fb;
-  --bg-soft: #eef2f7;
+  --bg-main: #f4f7f2;
+  --bg-soft: #e9f0e6;
   --surface: #ffffff;
-  --surface-strong: #e7edf5;
-  --text-main: #111827;
-  --text-soft: #4b5563;
-  --line: #d9e1eb;
-  --brand: #0f766e;
-  --brand-strong: #0d625c;
+  --surface-strong: #e4ecd8;
+  --text-main: #132116;
+  --text-soft: #4f5f50;
+  --line: #d5dfcc;
+  --brand: #3f6f2f;
+  --brand-strong: #335b26;
   --radius-md: 14px;
   --radius-lg: 22px;
-  --shadow-soft: 0 10px 26px rgba(17, 24, 39, 0.08);
+  --shadow-soft: 0 8px 22px rgba(26, 40, 22, 0.08);
 }
 
 *,
@@ -23,7 +23,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--bg-main);
   color: var(--text-main);
 }

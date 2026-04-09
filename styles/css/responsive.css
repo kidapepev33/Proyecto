@@ -1,12 +1,13 @@
 @media (max-width: 980px) {
-  .cards-grid-4 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .hero-grid,
   .contact-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

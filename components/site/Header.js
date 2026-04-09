@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="layout-shell header-row">
-        <a className="brand-mark" href="#top" aria-label="Fertility clinic homepage">
+        <a className="brand-mark" href="#home" aria-label="FertiNYC homepage">
           FertiNYC
         </a>
 
@@ -18,8 +18,8 @@ export default function Header() {
           </ul>
         </nav>
 
-        <a className="button-solid button-small" href="#contact">
-          Book Appointment
+        <a className="button-solid button-small" href="#about">
+          What makes us different?
         </a>
       </div>
     </header>

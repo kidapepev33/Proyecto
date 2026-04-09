@@ -11,7 +11,7 @@
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(247, 248, 251, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(6px);
 }
@@ -25,7 +25,8 @@
 }
 
 .hero-section {
-  padding: 68px 0 40px;
+  padding: 72px 0 56px;
+  background: linear-gradient(125deg, #204f1f 0%, #2e6a2c 40%, #85a83e 100%);
 }
 
 .hero-grid {
@@ -63,7 +64,7 @@
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   align-items: start;
 }
@@ -72,4 +73,14 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 16px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
 }

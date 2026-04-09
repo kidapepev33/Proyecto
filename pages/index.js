@@ -1,124 +1,114 @@
 import Head from "next/head";
-import ContactForm from "@/components/site/ContactForm";
 import Footer from "@/components/site/Footer";
 import Header from "@/components/site/Header";
-import { faqItems, processSteps, serviceCards, testimonials, trustPoints } from "@/data/siteContent";
+import { pillars } from "@/data/siteContent";
 
 export default function HomePage() {
   return (
     <>
       <Head>
-        <title>FertiNYC | Reproductive Care</title>
+        <title>FertiNYC | The True Taste of Pineapple</title>
         <meta
           name="description"
-          content="Comprehensive fertility services in NYC: testing, IUI, IVF and egg freezing with personalized care."
+          content="We represent the true taste of pineapple."
         />
       </Head>
 
-      <div id="top" className="page-wrap">
+      <div id="home" className="page-wrap">
         <Header />
 
         <main>
           <section className="hero-section">
             <div className="layout-shell hero-grid">
               <div>
-                <p className="eyebrow">Fertility Clinic in New York</p>
-                <h1 className="hero-title">Personalized Fertility Care for Every Family Journey</h1>
+                <p className="eyebrow">FertiNYC</p>
+                <h1 className="hero-title">
+                  We represent
+                  <br />
+                  the true taste
+                  <br />
+                  of pineapple
+                </h1>
                 <p className="hero-lead">
-                  Reproductive specialists, advanced treatment options and clear guidance from your first consultation
-                  to your next milestone.
+                  Costa Rican premium pineapple producer.
                 </p>
                 <div className="hero-actions">
-                  <a className="button-solid" href="#contact">
-                    Start Your Consultation
-                  </a>
-                  <a className="button-outline" href="#services">
-                    Explore Services
+                  <a className="button-solid" href="#about">
+                    What makes us different?
                   </a>
                 </div>
               </div>
 
-              <aside className="hero-panel" aria-label="Clinic highlights">
-                <p className="panel-title">Why patients choose us</p>
-                <ul>
-                  {trustPoints.map((point) => (
-                    <li key={point}>{point}</li>
-                  ))}
-                </ul>
+              <aside className="hero-panel" aria-label="Video presentation">
+                <p className="panel-title">Video</p>
+                <a className="media-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+                  Open video on YouTube
+                </a>
               </aside>
             </div>
           </section>
 
-          <section id="process" className="section-block">
+          <section id="about" className="section-block">
             <div className="layout-shell">
-              <p className="eyebrow">Our Process</p>
-              <h2 className="section-title">A Clear Plan from Day One</h2>
-              <div className="cards-grid cards-grid-3">
-                {processSteps.map((step) => (
-                  <article key={step.title} className="content-card">
-                    <h3>{step.title}</h3>
-                    <p>{step.description}</p>
+              <p className="eyebrow">MORE THAN 20 YEARS</p>
+              <h2 className="section-title">A family project that today puts up the name of our country</h2>
+              <p className="section-copy">
+                We started a family project that today puts up the name of our country. Today we go from being a small
+                family to becoming a family of more than one hundred collaborators who every day give their best to
+                bring the sweetest pineapple that exists to your table. We specialize in the marketing and production
+                of pineapple for the export of both Crownless and non-Crown fruit for fresh cut and its derivatives,
+                as well as RIPE crown fruit.
+              </p>
+              <div className="cards-grid cards-grid-3 margin-top">
+                {pillars.map((pillar) => (
+                  <article key={pillar.title} className="content-card pillar-card">
+                    {pillar.image ? <img className="pillar-image" src={pillar.image} alt="" /> : null}
+                    <h3>{pillar.title}</h3>
                   </article>
                 ))}
               </div>
             </div>
           </section>
 
-          <section id="services" className="section-block section-soft">
+          <section id="gallery" className="section-block section-soft">
             <div className="layout-shell">
-              <p className="eyebrow">Services</p>
-              <h2 className="section-title">Comprehensive Fertility Programs</h2>
-              <div className="cards-grid cards-grid-4">
-                {serviceCards.map((service) => (
-                  <article key={service.title} className="content-card">
-                    <h3>{service.title}</h3>
-                    <p>{service.description}</p>
-                  </article>
-                ))}
-              </div>
+              <p className="eyebrow">Our Tour</p>
+              <h2 className="section-title">Come to meet us</h2>
+              <p className="section-copy">
+                You are cordially invited to Pital de San Carlos, Costa Rica, to discover where one of the world&apos;s
+                best pineapples is born.
+              </p>
+              <p className="tour-sign">- Fertinyc team</p>
             </div>
           </section>
 
-          <section id="testimonials" className="section-block">
+          <section id="blog" className="section-block">
             <div className="layout-shell">
-              <p className="eyebrow">Patient Stories</p>
-              <h2 className="section-title">Trusted by Families Across NYC</h2>
-              <div className="cards-grid cards-grid-3">
-                {testimonials.map((item) => (
-                  <figure key={item.author} className="quote-card">
-                    <blockquote>{item.quote}</blockquote>
-                    <figcaption>{item.author}</figcaption>
-                  </figure>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          <section id="faq" className="section-block section-soft">
-            <div className="layout-shell">
-              <p className="eyebrow">FAQ</p>
-              <h2 className="section-title">Common Questions</h2>
-              <div className="faq-stack">
-                {faqItems.map((item) => (
-                  <article key={item.question} className="faq-item">
-                    <h3>{item.question}</h3>
-                    <p>{item.answer}</p>
-                  </article>
-                ))}
-              </div>
+              <p className="eyebrow">Blog & Recipes</p>
+              <h2 className="section-title">Fresh ideas and stories around pineapple</h2>
             </div>
           </section>
 
           <section id="contact" className="section-block contact-section">
-            <div className="layout-shell contact-grid">
+            <div className="layout-shell">
               <div>
-                <p className="eyebrow">Get Started</p>
-                <h2 className="section-title">Request Your First Fertility Consultation</h2>
-                <p className="section-copy">
-                  Share your goals and a coordinator will contact you to help schedule your first appointment.
-                </p>
+                <p className="eyebrow">Contact</p>
+                <h2 className="section-title">For more information contact us</h2>
               </div>
-              <ContactForm />
+              <div className="contact-grid simple-contact">
+                <article className="content-card">
+                  <h3>Location</h3>
+                  <p>Pital, San Carlos</p>
+                </article>
+                <article className="content-card">
+                  <h3>WhatsApp</h3>
+                  <p>(+506) 61969639</p>
+                </article>
+                <article className="content-card">
+                  <h3>Email</h3>
+                  <p>info@fertinyc.com</p>
+                </article>
+              </div>
             </div>
           </section>
         </main>
