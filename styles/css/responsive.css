@@ -1,0 +1,28 @@
+@media (max-width: 980px) {
+  .cards-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-grid,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .header-row {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+
+  .nav-list {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .cards-grid-3,
+  .cards-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

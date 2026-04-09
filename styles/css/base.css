@@ -1,0 +1,34 @@
+:root {
+  --bg-main: #f7f8fb;
+  --bg-soft: #eef2f7;
+  --surface: #ffffff;
+  --surface-strong: #e7edf5;
+  --text-main: #111827;
+  --text-soft: #4b5563;
+  --line: #d9e1eb;
+  --brand: #0f766e;
+  --brand-strong: #0d625c;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow-soft: 0 10px 26px rgba(17, 24, 39, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

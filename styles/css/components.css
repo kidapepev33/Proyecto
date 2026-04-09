@@ -1,0 +1,192 @@
+.brand-mark {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.button-solid,
+.button-outline {
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.button-solid {
+  background: var(--brand);
+  color: #fff;
+}
+
+.button-solid:hover {
+  background: var(--brand-strong);
+}
+
+.button-outline {
+  border-color: var(--line);
+  color: var(--text-main);
+  background: var(--surface);
+}
+
+.button-small {
+  padding: 10px 16px;
+  font-size: 0.9rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  letter-spacing: 1px;
+  color: var(--brand);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.hero-title {
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.hero-lead {
+  color: var(--text-soft);
+  line-height: 1.6;
+  margin: 0 0 20px;
+  max-width: 62ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-panel {
+  background: linear-gradient(165deg, #ffffff 0%, #f1f6fb 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-panel ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.panel-title {
+  margin: 0 0 14px;
+  font-weight: 700;
+}
+
+.section-title {
+  margin: 0 0 18px;
+  font-size: clamp(1.45rem, 2.3vw, 2.1rem);
+}
+
+.section-copy {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.content-card,
+.quote-card,
+.faq-item,
+.contact-form {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 18px;
+}
+
+.content-card h3,
+.quote-card figcaption,
+.faq-item h3 {
+  margin: 0 0 10px;
+}
+
+.content-card p,
+.quote-card blockquote,
+.faq-item p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+.quote-card blockquote {
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(15, 118, 110, 0.25);
+  border-color: var(--brand);
+}
+
+.form-success {
+  color: #065f46;
+  margin: 4px 0 0;
+}
+
+.form-error {
+  color: #b91c1c;
+  margin: 4px 0 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 0 40px;
+  background: #f2f5fa;
+}
+
+.footer-brand {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.footer-title {
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.footer-copy {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
