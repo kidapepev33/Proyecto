@@ -1,232 +1,203 @@
-.brand-mark {
-  font-weight: 700;
-  letter-spacing: 0.3px;
+﻿.fert-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
 }
 
-.nav-list {
+.fert-logo-icon {
+  width: 34px;
+  height: 48px;
+  background: linear-gradient(180deg, #ffffff 0%, #e9e9e9 100%);
+  clip-path: polygon(48% 0%, 73% 22%, 63% 44%, 84% 66%, 48% 100%, 14% 66%, 34% 44%, 24% 22%);
+}
+
+.fert-logo-copy span {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.fert-logo-copy strong {
+  font-size: 1.85rem;
+  letter-spacing: 1px;
+  line-height: 0.95;
+}
+
+.fert-nav-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
-  gap: 20px;
-  padding: 0;
+  align-items: center;
+  gap: 28px;
+}
+
+.fert-nav-list a {
+  color: #fff;
+  font-size: 0.98rem;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+
+.fert-hero-content h1 {
   margin: 0;
+  line-height: 1.02;
 }
 
-.nav-list a {
-  color: var(--text-main);
-  font-size: 0.95rem;
-  font-weight: 600;
+.line-white,
+.line-yellow {
+  display: block;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 8vw, 6.3rem);
 }
 
-.button-solid,
-.button-outline {
-  border-radius: 999px;
-  padding: 12px 20px;
-  font-weight: 600;
-  border: 1px solid transparent;
-  transition: 0.2s ease;
-  display: inline-block;
-}
-
-.button-solid {
-  background: #7fb239;
+.line-white {
   color: #fff;
 }
 
-.button-solid:hover {
-  background: var(--brand-strong);
+.line-yellow {
+  color: var(--fert-yellow);
 }
 
-.button-outline {
-  border-color: var(--line);
-  color: var(--text-main);
-  background: var(--surface);
-}
-
-.button-small {
-  padding: 10px 16px;
-  font-size: 0.9rem;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  font-size: 0.76rem;
-  letter-spacing: 1px;
-  color: #88bb40;
-  font-weight: 700;
-  margin: 0 0 10px;
-}
-
-.hero-title {
-  font-size: clamp(2.4rem, 5vw, 4.3rem);
-  line-height: 1.15;
-  margin: 0 0 14px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.hero-lead {
-  color: #e8f2df;
-  line-height: 1.6;
-  margin: 0 0 20px;
-  max-width: 62ch;
-}
-
-.hero-actions {
+.fert-hero-actions {
+  margin-top: 42px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  align-items: center;
+  gap: 28px;
 }
 
-.hero-panel {
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  box-shadow: none;
-}
-
-.panel-title {
-  margin: 0 0 14px;
+.fert-outline-btn {
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.76);
+  letter-spacing: 2px;
   font-weight: 700;
-  color: #fff;
+  font-size: 1rem;
+  padding: 16px 38px;
 }
 
-.media-link {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.section-title {
-  margin: 0 0 18px;
-  font-size: clamp(1.45rem, 2.3vw, 2.1rem);
-  text-transform: uppercase;
-}
-
-.section-copy {
-  margin: 0;
-  color: var(--text-soft);
-  line-height: 1.6;
-}
-
-.content-card,
-.quote-card,
-.faq-item,
-.contact-form {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  padding: 18px;
-}
-
-.content-card h3,
-.quote-card figcaption,
-.faq-item h3 {
-  margin: 0 0 10px;
-  text-transform: uppercase;
-}
-
-.content-card p,
-.quote-card blockquote,
-.faq-item p {
-  margin: 0;
-  color: var(--text-soft);
-  line-height: 1.55;
-}
-
-.quote-card blockquote {
-  font-style: italic;
-  margin-bottom: 12px;
-}
-
-.contact-form {
+.fert-play-btn {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 4px solid rgba(224, 184, 54, 0.8);
   display: grid;
-  gap: 10px;
+  place-items: center;
+  background: rgba(43, 111, 84, 0.78);
 }
 
-.contact-form label {
-  font-size: 0.92rem;
-  font-weight: 600;
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 22px solid #fff;
+  margin-left: 4px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 10px 12px;
-  font: inherit;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid rgba(15, 118, 110, 0.25);
-  border-color: var(--brand);
-}
-
-.form-success {
-  color: #065f46;
-  margin: 4px 0 0;
-}
-
-.form-error {
-  color: #b91c1c;
-  margin: 4px 0 0;
-}
-
-.site-footer {
-  border-top: 1px solid var(--line);
-  padding: 30px 0 40px;
-  background: #101710;
-  color: #f0f7e8;
-}
-
-.footer-brand {
-  font-weight: 700;
-  margin: 0 0 8px;
-}
-
-.footer-title {
-  margin: 0 0 6px;
-  font-weight: 700;
-}
-
-.footer-copy {
-  margin: 0;
-  color: #b8c7b4;
-  line-height: 1.5;
-}
-
-.footer-bottom a {
-  color: #d8ebcf;
-}
-
-.footer-legal {
-  margin: 0;
-  color: #a4b89f;
-  font-size: 0.9rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 12px;
-}
-
-.margin-top {
-  margin-top: 18px;
-}
-
-.pillar-card {
+.fert-about {
+  background: #fff;
   text-align: center;
 }
 
-.pillar-image {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  margin-bottom: 10px;
+.fert-section-title {
+  margin: 0 0 18px;
+  color: var(--fert-yellow);
+  text-transform: uppercase;
+  font-size: clamp(1.7rem, 3.3vw, 2.8rem);
+  letter-spacing: 0.9px;
 }
 
-.tour-sign {
-  margin-top: 12px;
-  color: var(--text-soft);
+.fert-section-copy {
+  max-width: 1020px;
+  margin: 0 auto;
+  font-size: 1.07rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.fert-pillars {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.fert-pillar {
+  padding: 18px;
+}
+
+.fert-pillar img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.fert-pillar h3 {
+  margin: 12px 0 0;
+  color: #2d2d2d;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.fert-tour {
+  text-align: center;
+  background: #f3f3f3;
+}
+
+.fert-tour-title {
+  margin: 0 0 14px;
+  font-size: 1.6rem;
+  color: #434343;
+  text-transform: uppercase;
+}
+
+.fert-sign {
+  margin-top: 14px;
+  color: #444;
+  font-style: italic;
+}
+
+.fert-link-btn {
+  display: inline-block;
+  margin-top: 20px;
+  color: #1f1f1f;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.fert-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fert-contact-grid h4 {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.fert-contact-grid p {
+  margin: 0;
+}
+
+.fert-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.fert-socials a {
+  text-decoration: underline;
+}
+
+.fert-legal {
+  margin: 0;
+  text-align: center;
+  color: #5e5e5e;
+  font-size: 0.92rem;
 }
