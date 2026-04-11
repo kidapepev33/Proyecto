@@ -1,32 +1,18 @@
-# FertiNYC Replica (Next.js)
+# FertiNYC Replica (HTML + CSS)
 
-Replica visual multi-pagina del sitio `https://www.fertinyc.com/en/home/` con rutas equivalentes y clases propias.
+Version estatica del sitio, sin Node.js y sin JavaScript.
 
-## Stack
-- Next.js
-- React
+## Estructura
+- `index.html`: redireccion a `en/home.html`.
+- `en/home.html`, `en/about-us-2.html`, `en/products-2.html`, `en/contact.html`.
+- `blog-grid.html`, `en-gallery.html`, `smoothie.html`, `postre-de-pina.html`, `ayuda.html`.
+- `assets/css/base.css`: base visual.
+- `assets/css/components.css`: header, footer, cards, layout comun.
+- `assets/css/pages.css`: estilos de home y secciones especiales.
+- `assets/img/*.svg`: placeholders locales.
 
-## Estructura principal
-- `pages/en/home.js`: home en ingles.
-- `pages/en/about-us-2.js`
-- `pages/en/products-2.js`
-- `pages/blog-grid.js`
-- `pages/en-gallery.js`
-- `pages/en/contact.js`
-- `pages/index.js`: entrada raiz apuntando al home.
-- `components/site/*`: header, footer, hero interno y home componentizada.
-- `data/siteContent.js`: navegacion, assets y bloques de contenido.
-- `styles/_extend.css`: punto unico para enlazar CSS.
-- `styles/css/*`: estilos por bloques (`base`, `layout`, `components`, `responsive`).
-- `PLAN_PROYECTO.md`: plan y estado del proyecto.
+## Uso local
+1. Abre `index.html` en el navegador.
+2. Navega entre paginas con el menu superior.
 
-## Ejecutar en local
-1. Instala Node.js 20+.
-2. Instala dependencias:
-   - `npm install`
-3. Corre el proyecto:
-   - `npm run dev`
-4. Abre `http://localhost:3000`.
-
-## Estado actual
-- Home reconstruida en modo replica visual.
+No requiere instalacion ni servidor Node.

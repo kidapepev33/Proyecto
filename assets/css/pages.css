@@ -1,0 +1,92 @@
+.hero {
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(120deg, rgba(14, 32, 25, 0.84), rgba(14, 32, 25, 0.55)), url("../img/hero-home.svg") center/cover;
+}
+
+.hero-content {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gold-400);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.hero h1 {
+  display: grid;
+  line-height: 0.95;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 7vw, 5rem);
+}
+
+.hero p {
+  max-width: 670px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  border-radius: 999px;
+  padding: 0 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.btn-outline {
+  border: 2px solid rgba(255, 255, 255, 0.72);
+}
+
+.btn-solid {
+  background: var(--gold-500);
+  color: #19231d;
+}
+
+.pillars article {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pillars img {
+  width: 56px;
+  margin: 0 auto 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tour {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(rgba(18, 49, 36, 0.78), rgba(18, 49, 36, 0.78)), url("../img/tour.svg") center/cover;
+}
+
+.tour .section-title {
+  color: #fff;
+}
