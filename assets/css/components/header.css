@@ -1,0 +1,146 @@
+header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 6%;
+    background: transparent;
+    transition:
+        background 0.4s ease,
+        padding 0.4s ease,
+        box-shadow 0.4s ease,
+        backdrop-filter 0.4s ease;
+}
+
+header div{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header img {
+    width: 200px;
+    transition: height 0.4s ease, transform 0.4s ease, width 0.4s ease;
+    height: auto;
+    margin-top: -2rem;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+header nav a:hover {
+    opacity: 0.7;
+}
+
+/* ================= SCROLLED ================= */
+
+
+header.scrolled {
+    background: rgba(58, 124, 97, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 0rem 2rem;
+}
+
+header.scrolled img {
+    width: 140px;
+    height: auto;
+    transition: height 0.4s ease, transform 0.4s ease, width 0.4s ease;
+    transform: scale(0.95);
+    padding-top: 18px;
+}
+
+header.scrolled nav a {
+    color: white;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("/assets/img/hero-pineapple.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: var(--accent);
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.hero-content span {
+    color: #d8b33d;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #d8b33d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* EVITA QUE EL CONTENIDO QUEDE TAPADO */
+main {
+    margin-top: 0;
+}
+
+header {
+    transform: translateY(-100%);
+    animation: headerIn 0.6s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes headerIn {
+    to {
+        transform: translateY(0);
+    }
+}

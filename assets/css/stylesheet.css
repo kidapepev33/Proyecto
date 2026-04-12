@@ -3,7 +3,7 @@
   --text: #1f2b24;
   --primary: #1f5b42;
   --accent: #d7a327;
-  --card: #ffffff;
+  --white: #ffffff;
   --line: #d6ddd7;
 }
 
@@ -29,14 +29,6 @@ nav {
   width: 100%;
 }
 
-header,
-main,
-footer {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 16px;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -44,16 +36,6 @@ header {
   gap: 16px;
 }
 
-header img {
-  width: 100px;
-  height: auto;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 
 a {
   color: var(--primary);
@@ -64,30 +46,22 @@ a:hover {
   text-decoration: underline;
 }
 
-section {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 18px;
-  margin: 12px 0;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0 0 10px;
-  color: var(--primary);
-}
-
-ul {
-  margin: 8px 0 0;
-  padding-left: 18px;
-}
-
-.grid {
-  display: grid;
+/*Utilidades*/
+.flex-column {
+  display: flex;
+  flex-direction: row;
   gap: 12px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
 }
 
 .card {
@@ -101,19 +75,6 @@ ul {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.gallery img,
-.card img,
-.hero img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-}
-
-.hero p {
-  margin-top: 10px;
 }
 
 footer {
@@ -135,6 +96,15 @@ footer {
 }
 
 /* Page transition */
+html.has-page-transition,
+html.has-page-transition body {
+  background: #fff !important;
+}
+
+.page-transition.preloaded .transition-white {
+  opacity: 1;
+}
+
 .page-transition {
   position: fixed;
   inset: 0;
@@ -143,6 +113,15 @@ footer {
   overflow: hidden;
 }
 
+/* fondo blanco */
+.page-transition .transition-white {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 1;
+}
+
+/* barra amarilla */
 .page-transition .bar {
   position: absolute;
   left: -120%;
@@ -151,35 +130,88 @@ footer {
   height: 110px;
   transform: translateY(-50%);
   background: #f4bf2f;
+  z-index: 2;
 }
 
+/* logo */
 .page-transition .logo {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  width: 86px;
+  top: 49%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 220px;
+  opacity: 0;
+  z-index: 3;
+}
+
+/* ===== ENTRADA ===== */
+.page-transition.is-entering.is-active .transition-white {
+  animation: white-entry 1.3s ease-in-out forwards;
+}
+
+.page-transition.is-entering.is-active .bar {
+  animation: bar-sweep 1.3s ease-in-out forwards;
+}
+
+.page-transition.is-entering.is-active .logo {
+  animation: logo-pulse 1.0s ease-in-out forwards;
+}
+
+/* ===== SALIDA ===== */
+.page-transition.is-leaving .transition-white {
   opacity: 0;
 }
 
-.page-transition.is-running .bar {
-  animation: bar-sweep 1s ease-in-out forwards;
+.page-transition.is-leaving.is-active .transition-white {
+  animation: white-exit 0.7s ease-in-out forwards;
 }
 
-.page-transition.is-running .logo {
-  animation: logo-pulse 1s ease-in-out forwards;
+.page-transition.is-leaving .bar,
+.page-transition.is-leaving .logo {
+  display: none;
 }
 
+/* barra amarilla */
 @keyframes bar-sweep {
-  0% { left: -120%; }
-  35% { left: 0; }
-  60% { left: 0; }
+  0%   { left: -120%; }
+  35%  { left: 0; }
+  70%  { left: 0; }
   100% { left: 120%; }
 }
 
+/* logo */
 @keyframes logo-pulse {
-  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.85); }
-  30% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  65% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  100% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.85);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.92);
+  }
+}
+
+/* fondo blanco al entrar:
+   se mantiene visible mientras pasa la barra
+   y se va más lento al final */
+@keyframes white-entry {
+  0%   { opacity: 1; }
+  70%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* fondo blanco al salir:
+   aparece lento, cubre todo,
+   y la siguiente página arranca blanca */
+@keyframes white-exit {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }

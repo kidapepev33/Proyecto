@@ -1,0 +1,46 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/assets/img/hero-pineapple.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin-bottom: 16px;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #d8b33d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+}

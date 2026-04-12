@@ -1,49 +1,64 @@
 ﻿<!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fertinyc | Inicio</title>
   <link rel="stylesheet" href="assets/css/_extend.css">
+  <script src="assets/js/head-transition.js"></script>
 </head>
+
 <body>
   <header>
-    <img src="assets/img/logo-fertinyc.png" alt="Fertinyc">
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="pages/about-us.html">Nosotros</a>
-      <a href="pages/products.html">Productos</a>
-      <a href="pages/blog-grid.html">Blog</a>
-      <a href="pages/galeria.html">Galería</a>
-      <a href="pages/contact-us-2.html">Contacto</a>
-    </nav>
+    <div class="flex-column flex-center">
+      <img src="assets/img/logo-fertinyc.png" alt="Fertinyc">
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="pages/about-us.html">Nosotros</a>
+        <a href="pages/products.html">Productos</a>
+        <a href="pages/blog-grid.html">Blog</a>
+        <a href="pages/galeria.html">Galería</a>
+        <a href="pages/contact-us-2.html">Contacto</a>
+      </nav>
+    </div>
   </header>
 
   <main>
+
     <section class="hero">
-      <h1>Representamos el verdadero sabor de la piña</h1>
-      <img src="assets/img/hero-pineapple.jpg" alt="Piña Fertinyc">
-      <p>Producción y exportación de piña costarricense con enfoque en calidad, trazabilidad y compromiso.</p>
-    </section>
+      <div class="hero-overlay"></div>
 
-    <section>
-      <h2>¿Quiénes somos?</h2>
-      <p>Somos una empresa agrícola ubicada en Pital de San Carlos, Costa Rica, dedicada a llevar piña de alta calidad a diferentes mercados.</p>
-    </section>
-
-    <section>
-      <h2>Nuestras áreas</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Producción</h3>
-          <p>Cultivo responsable y control de calidad desde campo.</p>
-        </article>
-        <article class="card">
-          <h3>Comercialización</h3>
-          <p>Exportación y distribución para clientes nacionales e internacionales.</p>
-        </article>
+      <div class="hero-content">
+        <h1>Representamos el<br><span>verdadero sabor de la piña</span></h1>
+        <p>Producción de calidad con tradición y frescura.</p>
+        <a href="#productos" class="btn">Ver productos</a>
       </div>
     </section>
+
+    <div class="content">
+      <section>
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una empresa agrícola ubicada en Pital de San Carlos, Costa Rica, dedicada a llevar piña de alta calidad
+          a diferentes mercados.</p>
+      </section>
+
+      <section>
+        <h2>Nuestras áreas</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Producción</h3>
+            <p>Cultivo responsable y control de calidad desde campo.</p>
+          </article>
+
+          <article class="card">
+            <h3>Comercialización</h3>
+            <p>Exportación y distribución para clientes nacionales e internacionales.</p>
+          </article>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -54,8 +69,5 @@
   </footer>
   <script src="assets/js/page-transition.js"></script>
 </body>
+
 </html>
-
-
-
-
