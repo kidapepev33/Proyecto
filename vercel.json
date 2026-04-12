@@ -1,0 +1,14 @@
+{
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/pages/index.html" },
+    { "source": "/about-us", "destination": "/pages/about-us.html" },
+    { "source": "/products", "destination": "/pages/products.html" },
+    { "source": "/blog-grid", "destination": "/pages/blog-grid.html" },
+    { "source": "/galeria", "destination": "/pages/galeria.html" },
+    { "source": "/contact-us-2", "destination": "/pages/contact-us-2.html" }
+  ]
+}
